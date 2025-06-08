@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
     apt install -y vim git curl wget httpie iputils-ping traceroute dnsutils socat sudo \
-                   build-essential cmake patchelf file tmux && \
+                   build-essential cmake patchelf file tmux environment-modules && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 ENV LANG=en_US.UTF-8
