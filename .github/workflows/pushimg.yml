@@ -19,6 +19,6 @@ jobs:
 
       - name: Build and push the dev Docker image
         run: |
-          docker build . --tag ghcr.io/tushar-mohan/dev:latest
-          docker push ghcr.io/tushar-mohan/dev:latest
+          docker build . --tag ghcr.io/${{ github.actor }}/dev:latest
+          docker push ghcr.io/${{ github.actor }}/dev:latest
 
